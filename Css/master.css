@@ -1,0 +1,140 @@
+/* Start Global Element */
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans" , sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* End Global Element */
+.socially{
+    background-color: white;
+    background-image: url(../image/back-image.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+@media (max-width:767px) {
+    .socially .container .tape {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .socially .container .tape .links{
+        margin: 0;
+    }
+    .socially .container .tape ul:last-child{
+        margin: 0;
+    }
+    .socially .container .tape .down{
+        font-size: 13px;
+    margin: 0px 0 0 30px;
+    padding: 4px 15px;
+    }
+}
+.socially .container .tape li{
+    transition: 0.3s;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.socially .container .tape li:hover{
+    background-color: #ffeb3b38;
+}
+.socially .container .tape li a{
+    transition: 0.3s;
+}
+.socially .container .tape li:hover a:not(.down){
+    color: red;
+}
+.container .down{
+    transition: 0.6s;
+}
+.socially .container .tape:hover .down,
+.socially .container .content .down:hover{
+    color: #00ffff;
+    border-top-right-radius: 50px;
+}
+.container .content .info{
+    margin-top: 10%;
+    max-width: 600px;
+}
+@media (max-width:767px){
+    .container .content .info{
+        text-align: center;
+    }
+}
+.container .content .info h1{
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+.container .content .info p{
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .content .down {
+    width: fit-content;
+    margin: auto;
+    animation-delay: 1s;
+}
+.container .content img{
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 40px
+}
+@media (max-width:767px){
+    .container .content img{
+        display: none;
+    }
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: move-up 0.5s linear forwards;
+}
+/* Start Anamation */
+@keyframes move-up{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* End Anamation */

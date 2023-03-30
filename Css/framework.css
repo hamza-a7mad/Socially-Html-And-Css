@@ -1,0 +1,74 @@
+/* Start Display */
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.d-inblock{
+    display: inline-block;
+}
+.gap-20{
+    gap: 20px;
+}
+/* Ens Display */
+
+/* Start Padding + Margin  */
+.p-20{
+    padding: 20px;
+}
+.mr-5{
+    margin-right: 5px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+/* Ens Padding + Margin */
+
+/* Start Color */
+.c-white{
+    color: white;
+}
+.c-black{
+    color: black;
+}
+.c-777{
+    color: #777;
+}
+.bc-rbink{
+    background: linear-gradient(45deg, #df4881, #c430d7);
+}
+
+/* Ens Color */
+
+/* Start Width + Height */
+.w-150{
+    width: 150px;
+}
+/* Ens Width + Height */
+
+/* Start Font */
+.fs-14{
+    font-size: 14px;
+}
+.fs-18{
+    font-size: 18ox;
+}
+/* End  Font */
+
+/* Start Width + Height */
+/* Ens Width + Heidht */
+
+/* Start Some Elements */
+.f-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ptn-shape{
+    padding: 14px 40px;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    height: 50px;
+}
+/* Ens Elementss */
